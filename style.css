@@ -1,52 +1,46 @@
 section.page {
     height: 100%;
     min-height: 800px;
+    background-color:  #F5F4F4;
 }
 
 section.page#home {
     background-image: url('assets/images/treeHomepageImage.jpg');
-    background-color: #F5F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-section.page#about-me {
-    background-color:  #F5F4F4;
+section.page#home .me {
+    min-width: 640px;
 }
 
-section.page#projects {
-    background-color: #F5F4F4;
+section.page .padtop {
+    padding-top: 50px;
 }
 
-section.page#visualprojects {
-    background-color: #F5F4F4;
+section.page .hometitle {
+    font-size: 36px;
+    color: #335b74;
 }
 
-section.page#education {
-    background-color: #F5F4F4;
-
-}
-
-section.page#works {
-    background-color: #F5F4F4;
-
-}
-
-section.page#contact {
-    background-color: #F5F4F4;
-
+section.page .homesubtitle {
+    font-size: 16px;
+    color: #5b7e91;
 }
 
 section.page .title {
     font-size: 36px;
-    color: #77AAAD;
+    color: #5b7e91;
 }
 
 section.page .titlesmaller {
-    font-size: font-size: 1.5rem;
+    font-size: 1.5rem;
     color: #77AAAD;
 }
 
 section.page .titleother {
-    font-size: font-size: 1.5rem;
+    font-size: 1.5rem;
     color: #52344f;
 }
 
@@ -78,6 +72,14 @@ section.page .text {
     background-size: cover;
 }
 
+
+.hobbiesList li {
+    list-style: none;
+    font-size: 1rem;
+    color: #52344f;
+    margin: 0;
+}
+
 .social-icons li {
     font-size: 21px;
     color: #52344f;
@@ -89,7 +91,7 @@ section.page .text {
 }
 
 .social-icons li a {
-    color: #52344f;
+    color: #F5F4F4;
 }
 
 .social-icons li a:hover {
@@ -192,7 +194,6 @@ nav::before {
 .service-box {
     color: #F5F4F4;
     text-decoration: none;
-    height: 100%;
 }
 
 a.important:hover{
@@ -263,7 +264,6 @@ a.service-box.orange:hover {
     color: #e6886e;
 }
 
-/*@todo choose the right logo between two and alignement to see*/
 .work-icon {
     font-size: 21px;
     color: #e6886e;
@@ -280,52 +280,6 @@ a.service-box.orange:hover {
     display: none;
 }
 
-
-/*tooltip*/
-
-#tooltip {
-    background: #333;
-    color: white;
-    font-weight: bold;
-    padding: 4px 8px;
-    font-size: 13px;
-    border-radius: 4px;
-    display: none;
-}
-
-#tooltip[data-show] {
-    display: block;
-}
-
-#arrow,
-#arrow::before {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    z-index: -1;
-}
-
-#arrow::before {
-    content: '';
-    transform: rotate(45deg);
-    background: #333;
-}
-
-#tooltip[data-popper-placement^='top'] > #arrow {
-    bottom: -4px;
-}
-
-#tooltip[data-popper-placement^='bottom'] > #arrow {
-    top: -4px;
-}
-
-#tooltip[data-popper-placement^='left'] > #arrow {
-    right: -4px;
-}
-
-#tooltip[data-popper-placement^='right'] > #arrow {
-    left: -4px;
-}
 
 video {
     max-width: 100%;

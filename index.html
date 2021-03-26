@@ -37,11 +37,11 @@
     </nav>
 </header>
 <section id="home" class="container-fluid page">
-    <div class="row h-100 justify-content-center align-items-center">
+    <div class="me row justify-content-center align-items-center">
         <div class="col-6 text-center">
             <div class="rounded-circle mx-auto mb-4 portfolio-image"></div>
-            <h1 class="mb-2 mt-0 title">Fanny Armand</h1>
-            <span id="subtitle" class="subtitle"></span>
+            <h1 class="mb-2 mt-0 hometitle">Fanny Armand</h1>
+            <span id="subtitle" class="homesubtitle">Welcome folks!</span>
             <ul class="list-inline mb-0 mt-4 social-icons">
                 <li class="list-inline-item "><a href="https://github.com/Fannyarmand" target="_blank"><i
                         class="bi bi-github"></i></a></li>
@@ -53,9 +53,9 @@
     </div>
 </section>
 <section id="about-me" class="container-fluid page">
-    <div class="row h-100 justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center">
         <div class="col-10">
-            <div class="row h-80 justify-content-center align-items-center">
+            <div class="padtop row h-80 justify-content-center align-items-center">
                 <div class="col pe-5">
                     <h1 class="title my-4">About me</h1>
                     <p class="py-5 text">Depuis toujours amoureuse de la nature, des sports liées à celle-ci qui aurait
@@ -97,38 +97,22 @@
                     <h2 class="subtitlebigger">I like to</h2>
                     <button id="bouton1" class="btn" onClick="showMeaning('hobbiesList')">
                         <ul class="list-inline py-5 social-icons">
-                            <li id="hobbylogo" aria-describedby="tooltip" class="list-inline-item">
+                            <li class="list-inline-item">
                                 <i class="fas fa-passport"></i>
-                                <div id="tooltip" role="tooltip">
-                                    Travel around the world
-                                    <div id="arrow" data-popper-arrow></div>
-                                </div>
                             </li>
-                            <li id="hobbylogo" aria-describedby="tooltip" class="list-inline-item">
+                            <li class="list-inline-item">
                                 <i class="fas fa-mountain"></i>
-                                <div id="tooltip" role="tooltip">
-                                    Mountain and Nature
-                                    <div id="arrow" data-popper-arrow></div>
-                                </div>
                             </li>
-                            <li id="hobbylogo" aria-describedby="tooltip" class="list-inline-item">
+                            <li class="list-inline-item">
                                 <i class="fas fa-running"></i>
-                                <div id="tooltip" role="tooltip">
-                                    Running and Climbing
-                                    <div id="arrow" data-popper-arrow></div>
-                                </div>
                             </li>
-                            <li id="hobbylogo" aria-describedby="tooltip" class="list-inline-item">
+                            <li class="list-inline-item">
                                 <i class="fas fa-hand-holding-heart"></i>
-                                <div id="tooltip" role="tooltip">
-                                    Weaving and Handcraft
-                                    <div id="arrow" data-popper-arrow></div>
-                                </div>
                             </li>
                         </ul>
                     </button>
                     <div id="hobbiesList" style="display:none;">
-                        <ul>
+                        <ul class="hobbiesList">
                             <li>Travel around the world</li>
                             <li>Mountain and Nature</li>
                             <li>Running and Climbing</li>
@@ -142,7 +126,7 @@
     </div>
 </section>
 <section id="projects" class="container-fluid page">
-    <div class="row h-100 justify-content-center align-items-center">
+    <div class="padtop row justify-content-center align-items-center">
         <div class="col-10">
             <div class="row">
                 <h1 class="title">Projects</h1>
@@ -232,7 +216,7 @@
     </div>
 </section>
 <section id="visualprojects" class="container-fluid page">
-    <div class="row h-100 justify-content-center align-items-center">
+    <div class="padtop row justify-content-center align-items-center">
         <div class="col-10">
             <div class="row">
                 <h1 class="title my-4"> Visual Projects</h1>
@@ -244,25 +228,11 @@
                         <ul>
                             <li>Lua</li>
                             <li>Infographie 2D</li>
+                            <li>Graphisme</li>
                             <li>Déplacements, Collisions...</li>
                         </ul>
                         </p>
                         <a href="https://github.com/manon-coulombe/peachBross" class="btn btn-primary" target="_blank"><i
-                                class="bi bi-github"></i> See project on github</a>
-                    </div>
-                </div>
-                <div class="card my-4 mx-4" style="width: 18rem;">
-                    <img src="assets/images/vizudataprojectPicture.png" height="250"/>
-                    <div class="card-body">
-                        <h5 class="card-title">Création d'une visualisation de données</h5>
-                        <p class="card-text">
-                        <ul>
-                            <li>HTML, CSS et Javascript</li>
-                            <li>Découvrir le traitement de données en temps réel</li>
-                            <li>SVG</li>
-                        </ul>
-                        </p>
-                        <a href="https://github.com/Fannyarmand/vizudataproject" class="btn btn-primary" target="_blank"><i
                                 class="bi bi-github"></i> See project on github</a>
                     </div>
                 </div>
@@ -278,6 +248,21 @@
                         </ul>
                         </p>
                         <a href="https://github.com/Fannyarmand/pendu-bot" class="btn btn-primary" target="_blank"><i
+                                class="bi bi-github"></i> See project on github</a>
+                    </div>
+                </div>
+                <div class="card my-4 mx-4" style="width: 18rem;">
+                    <img src="assets/images/vizudataprojectPicture.png" height="250"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Création d'une visualisation de données</h5>
+                        <p class="card-text">
+                        <ul>
+                            <li>HTML, CSS et Javascript</li>
+                            <li>Découvrir le traitement de données en temps réel</li>
+                            <li>SVG</li>
+                        </ul>
+                        </p>
+                        <a href="https://github.com/Fannyarmand/vizudataproject" class="btn btn-primary" target="_blank"><i
                                 class="bi bi-github"></i> See project on github</a>
                     </div>
                 </div>
