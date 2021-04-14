@@ -73,13 +73,6 @@ section.page .text {
 }
 
 
-.hobbiesList li {
-    list-style: none;
-    font-size: 1rem;
-    color: #52344f;
-    margin: 0;
-}
-
 .social-icons li {
     font-size: 21px;
     color: #52344f;
@@ -92,6 +85,7 @@ section.page .text {
 
 .social-icons li a {
     color: #F5F4F4;
+    cursor: pointer;
 }
 
 .social-icons li a:hover {

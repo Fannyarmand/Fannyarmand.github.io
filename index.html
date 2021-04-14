@@ -58,13 +58,13 @@
             <div class="padtop row h-80 justify-content-center align-items-center">
                 <div class="col pe-5">
                     <h1 class="title my-4">About me</h1>
-                    <p class="py-5 text">Depuis toujours amoureuse de la nature, des sports liées à celle-ci qui aurait
-                        pensé que je serai captivée par bidouiller devant un ordinateur!<br>
+                    <p class="py-5 text">Depuis toujours amoureuse de la nature, des sports liés à celle-ci qui aurait
+                        pensé que je serai captivée par bidouiller devant un ordinateur...<br>
                         <br>Et pourtant depuis que j’ai découvert la magie du développement informatique je ne fais que
-                        ça! Ma soif d’apprendre de nouvelles choses totalement en dehors de ma zone de confort a fait
+                        ça ! Ma soif d’apprendre de nouvelles choses totalement en dehors de ma zone de confort a fait
                         que je me reconvertis dans ce domaine avec le soutien d’une école à la super pédagogie où on
-                        apprend par le « do-it» .<br>
-                        <br>Mon sens esthétique prononcé pourrait me permettre de travailler dans le front-end mais je
+                        apprend par le « do-it».<br>
+                        <br>Mon sens esthétique prononcé pourrait me permettre de travailler facilement dans le front-end mais je
                         souhaite tout découvrir et la polyvalence est une chose qui me tient à coeur.</p>
                     <a class="btn btn-primary rounded-pill" href="assets/documents/CV_FA.pdf" target="_blank"
                        title="CV Fanny Armand">
@@ -95,31 +95,40 @@
                         </li>
                     </ul>
                     <h2 class="subtitlebigger">I like to</h2>
-                    <button id="bouton1" class="btn" onClick="showMeaning('hobbiesList')">
                         <ul class="list-inline py-5 social-icons">
-                            <li class="list-inline-item">
-                                <i class="fas fa-passport"></i>
-                            </li>
-                            <li class="list-inline-item">
-                                <i class="fas fa-mountain"></i>
-                            </li>
-                            <li class="list-inline-item">
-                                <i class="fas fa-running"></i>
-                            </li>
-                            <li class="list-inline-item">
-                                <i class="fas fa-hand-holding-heart"></i>
-                            </li>
+                            <button class="btn" onClick="showMeaning('hobbies1')">
+                                <li class="list-inline-item">
+                                    <i class="fas fa-passport"></i>
+                                </li>
+                            </button>
+                            <button class="btn" onClick="showMeaning('hobbies2')">
+                                <li class="list-inline-item">
+                                    <i class="fas fa-mountain"></i>
+                                </li>
+                            </button>
+                            <button class="btn" onClick="showMeaning('hobbies3')">
+                                <li class="list-inline-item">
+                                    <i class="fas fa-running"></i>
+                                </li>
+                            </button>
+                            <button class="btn" onClick="showMeaning('hobbies4')">
+                                <li class="list-inline-item">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                </li>
+                            </button>
                         </ul>
-                    </button>
-                    <div id="hobbiesList" style="display:none;">
-                        <ul class="hobbiesList">
-                            <li>Travel around the world</li>
-                            <li>Mountain and Nature</li>
-                            <li>Running and Climbing</li>
-                            <li>Weaving and Handcraft</li>
-                        </ul>
+                    <div id="hobbies1" style="display:none;">
+                        <p class="text">Travel around the world</p>
                     </div>
-
+                    <div id="hobbies2" style="display:none;">
+                        <p class="text">Mountain and Nature</p>
+                    </div>
+                    <div id="hobbies3" style="display:none;">
+                        <p class="text">Running and Climbing</p>
+                    </div>
+                    <div id="hobbies4" style="display:none;">
+                        <p class="text">Weaving and Handcraft</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -180,7 +189,7 @@
                     <a class="card service-box green" href="https://github.com/Fannyarmand/individual-exercises"
                        target="_blank">
                         <div class="card-body">
-                            <h5 class="card-title">Individual exercices</h5>
+                            <h5 class="card-title">Individual exercises</h5>
                             <p class="card-text">Practice
                             <br> . Object methods
                             <br> . Test Driven Development</p>
@@ -279,17 +288,17 @@
                     <li class="mb-3">
                         <div>
                             <i class="fas fa-graduation-cap experience-icon"></i>
-                            <span class="subtitle">Octobre 2019-present</span>
+                            <span class="subtitle">Octobre 2020 - présent</span>
                         </div>
                         <div class="ms-2 inner-experience">
-                            <h4 class="my-3 titleother">Apprenant en développement informatique</h4>
+                            <h4 class="my-3 titleother">Concepteur développeur d’applications</h4>
                             <p class="subtitle">ADA Tech School - Paris</p>
                         </div>
                     </li>
                     <li class="mb-3">
                         <div>
                             <i class="fas fa-graduation-cap experience-icon"></i>
-                            <span class="subtitle">2007-2009</span>
+                            <span class="subtitle">2007 - 2009</span>
                         </div>
                         <div class="ms-2 inner-experience">
                             <h4 class="my-3 titleother">Adjoint de direction</h4>
@@ -396,7 +405,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-10 text-center">
+            <div class="col-5 text-center">
                 <ul class="my-5 contact-icons">
                     <li><i class="fas fa-map-marker-alt"></i>
                         Boulogne-billancourt
@@ -408,12 +417,22 @@
                         <a href="mailto:fannyarmand2@gmail.com"> fannyarmand2@gmail.com</a>
                     </li>
                 </ul>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.8433829692826!2d2.227789115397342!3d48.84212600980626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b20957c0673%3A0xbd35d226bb3900ec!2s108%20Avenue%20Jean%20Baptiste%20Clement%2C%2092100%20Boulogne-Billancourt!5e0!3m2!1sfr!2sfr!4v1610445532398!5m2!1sfr!2sfr"
-                        width="500" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+
+            </div>
+            <div class="col-5 text-center">
+                <iframe class="my-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.8433829692826!2d2.227789115397342!3d48.84212600980626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67b20957c0673%3A0xbd35d226bb3900ec!2s108%20Avenue%20Jean%20Baptiste%20Clement%2C%2092100%20Boulogne-Billancourt!5e0!3m2!1sfr!2sfr!4v1610445532398!5m2!1sfr!2sfr"
+                        width="350" height="150" frameborder="0" style="border:0;" allowfullscreen=""
                         aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="offset-5 col-2">
+                <a class="btn btn-primary rounded-pill w-100" href="https://calendly.com/fanny-armand" target="_blank"
+                   title="Plan an interview">
+                    Plan an interview
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 <footer class="py-5 footer">
